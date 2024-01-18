@@ -1,5 +1,5 @@
 // Fetching data from the API
-class ProductService {
+export class ProductService {
     static FetchProducts() {
         return fetch('https://fakestoreapi.com/products')
             .then(response => response.json())
@@ -34,4 +34,4 @@ class ProductService {
             });
     }
 }
-module.exports = ProductService;
+//module.exports = ProductService;
