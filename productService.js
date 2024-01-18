@@ -14,8 +14,9 @@ class ProductService {
                 throw new Error(`Failed to fetch products: ${error.message}`);
             });
     }
+
     static Ex10FetchProducts() {
-        return fetch('https://fakestoreapi.com/products333')
+        return fetch('https://fakestoreapi.com/products')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
