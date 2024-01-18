@@ -1,4 +1,4 @@
-const Product = require('./Product');
+const Product = require('./product');
 
 class Cart {
     #discountCodes; // Private field for discount codes
@@ -42,8 +42,8 @@ class Cart {
         }
     }
 
-    displayCart() {
-        console.log(`\n**** CART CONTENTS ****`);
+    displayCart(cartName) {
+        console.log(`\n**** ${cartName} CONTENTS ****`);
 
         this.items.forEach(item => {
             console.log(`${item.product.name} - $${item.product.price} x ${item.quantity}`);
